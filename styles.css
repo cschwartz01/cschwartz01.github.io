@@ -8,33 +8,43 @@ header {
     display: grid;
     /* margin: 2rem; */
     grid-template-columns: 1fr 2fr;
-    /* height: 10vh; */
+    /* height: 8vh; */
+    height: 10%;
     min-height: 60px;
 }
 
 nav {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: grid;
     /* grid-template-columns: 1fr; */
     align-items: center;
     /* justify-content: space-between; */
     position: relative;
-    margin: 1rem;
+    padding-right: 10px;
+}
+
+.header-img-wrapper {
+    /* border: 2px solid black; */
+    justify-content: center;
 }
 
 header img {
     width: 12vw;
+    height:auto;
+    margin: 10px;
 }
 
 /* Hamburger Button */
 #menu-toggle {
-    font-size: 5vh;
+    /* font-size: 5vh; */
+    font-size: 10em;
+    height:fit-content;
     background: none;
     border: none;
     color: black;
     cursor: pointer;
     text-align: right;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* position: fixed; */
 }
 
@@ -45,12 +55,12 @@ header img {
     margin: 0;
     display: none; 
     flex-direction: column;
-    background: #444;
+    background: #749AB3;
     position: fixed;
-    top: 0;
-    left: 0 !important;
+    top: 10%;
+    right: 0;
     width: 20vh;
-    font-size: 5vh;
+    font-size: 3.5vh;
 }
 
 /* Show menu when active */

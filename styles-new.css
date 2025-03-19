@@ -1,0 +1,131 @@
+:root {
+    --background-color: white;
+    --primary-color: #749AB3;
+    --secondary-color: #679436;
+    --tertiary-color: #386641;
+    --accent-color: #F1E071;
+    --font-family: 'Marmelad', sans-serif;
+  }
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Marmelad', sans-serif;
+}
+
+header {
+    /* background-color: rgb(0, 213, 255); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 10%;
+    min-height: 60px;
+}
+
+nav {
+    /* border: 2px solid green; */
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+}
+
+#header-img-wrapper {
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+
+header img {
+    width: auto;
+    height: 5vw;
+    margin: 10px;
+}
+
+#menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    background: none;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu.active {
+    display: flex;
+    align-items: center;
+}
+
+#hello-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#hello-logo-wrapper {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+#hello-logo-wrapper img {
+    width: 40vh;
+}
+
+#hello-text-wrapper {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+#hello-section h1 {
+    font-size: 4rem;
+    width: fit-content;
+    border-bottom: 5px solid var(--accent-color);
+    text-align: center;
+}
+
+#hello-section p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+#about-section {
+    background: var(--primary-color);
+    height: fit-content;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+#about-text-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+#about-section img {
+    width: 50vh;
+}
+
+#featured-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 1;
+    border: 2px solid black;
+}
+
+.feature-page {
+    display: grid;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+#featured-section img {
+    width: 500px;
+    height: 500px;
+}

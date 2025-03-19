@@ -4,11 +4,9 @@ body {
 }
 
 header {
-    /* border: 2px solid rgb(0, 213, 255); */
+    background-color: rgb(0, 213, 255);
     display: grid;
-    /* margin: 2rem; */
     grid-template-columns: 1fr 2fr;
-    /* height: 8vh; */
     height: 10%;
     min-height: 60px;
 }
@@ -16,14 +14,12 @@ header {
 nav {
     /* border: 2px solid green; */
     display: grid;
-    /* grid-template-columns: 1fr; */
     align-items: center;
-    /* justify-content: space-between; */
     position: relative;
     padding-right: 10px;
 }
 
-.header-img-wrapper {
+#header-img-wrapper {
     /* border: 2px solid black; */
     justify-content: center;
 }
@@ -36,7 +32,6 @@ header img {
 
 /* Hamburger Button */
 #menu-toggle {
-    /* font-size: 5vh; */
     font-size: 10em;
     height:fit-content;
     background: none;
@@ -69,40 +64,61 @@ header img {
     align-items: center;
 }
 
-.hello-section {
+#hello-section {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.hello-logo-wrapper {
+#hello-logo-wrapper {
     /* border: 2px solid black; */
     display: flex;
     justify-content: center;
 }
 
-.hello-logo-wrapper img {
+#hello-logo-wrapper img {
     width: 30vh;
 }
 
-.hello-text-wrapper {
+#hello-text-wrapper {
     /* border: 2px solid black; */
     text-align: center;
 }
 
-.hello-section h1 {
+#hello-section h1 {
     font-size: 14vw;
 }
 
-.hello-section p {
+#hello-section p {
     font-size: 3vw;
 }
 
-.about-section {
+#about-section {
     background: #749AB3;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    min-height: 30vh;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+#about-text-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+#featured-section {
+    display: grid;
+    justify-content: center;
+    /* width:fit-content */
+}
+
+#featured-section img {
+    width: 85%;
 }
 
 /* Desktop Size */
-/* @media (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 
     header {
         border: 2px solid blue;
@@ -123,4 +139,4 @@ header img {
     #menu-toggle {
         display: none;
     }
-} */
+}

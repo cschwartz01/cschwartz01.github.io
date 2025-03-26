@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <div id="header-img-wrapper">
             <img src="images/logo-no-text.png" alt="Charlie Schwartz Logo">
@@ -14,15 +16,18 @@
         <nav>
             <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
             <ul id="menu">
-                <li>Home</li>
-                <li>Work</li>
-                <li>Resume</li>
-                <li>Contact</li>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./pages/work.html"><li>My Work</li></a>
+                <a href="./pages/resume.html"><li>Resume</li></a>
+                <a href="./pages/contact.html"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <div id="hello-section">
         <div id="hello-logo-wrapper">
+            <!-- fix this image, it's the wrong one  -->
             <img src="images/logo-w-text.png" alt="Charlie Schwartz logo with name text">
         </div>
         <div id="hello-text-wrapper">
@@ -35,7 +40,9 @@
             <h2>About Me</h2>
             <p>text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text placeholder</p>  
         </div>
-        <img src="images/profile_photo.png" alt="" width="" height="">
+        <div id="about-img-wrapper">
+            <img src="images/profile_photo.png" alt="" width="" height="">
+        </div>
     </div>
     <div id="featured-section">
         <div class="feature-page">

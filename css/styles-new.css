@@ -249,7 +249,7 @@ button {
 .large-header {
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .large-header h1 {
@@ -283,4 +283,10 @@ button {
 
 .content img {
     width: 90%;
+}
+
+.content-image {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }

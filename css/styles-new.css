@@ -206,6 +206,11 @@ header img {
     height: 500px;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 /* ---------- CONTENT ---------- */
 
 .blue-header {
@@ -235,4 +240,31 @@ header img {
     font-size: var(--h1-size);
     width: fit-content;
     border-bottom: 5px solid var(--accent-color);
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 3rem;
+    margin: 1;
+}
+
+.content {
+    display: grid;
+    padding: 1rem;
+}
+
+.content-wrapper h3 {
+    font-size: var(--h3-size);
+    color: var(--text-color);
+}
+
+.content-wrapper p {
+    font-size: var(--p-size);
+    color: var(--text-color);
+}
+
+.content img {
+    width: 90%;
 }

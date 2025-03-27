@@ -23,9 +23,25 @@
 
 /* ---------- GLOBAL STYLES ---------- */
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--background-color);
     font-family: var(--font-family)
+}
+
+.overlay {
+    position: absolute;
+    rotate: -130deg;
+    right: -10rem;
+    top: 24rem;
+    z-index:999;
+}
+
+.overlay img {
+    width: 60vh;
 }
 
 /* ---------- HEADER ---------- */
@@ -174,9 +190,9 @@ header img {
 #featured-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    margin: 1;
-    /* border: 2px solid black; */
+    padding: 2rem;
+    margin: 2rem;
+    padding-bottom: 4rem;
 }
 
 .overlay-text {
@@ -202,8 +218,8 @@ header img {
 }
 
 #featured-section img {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
 }
 
 button {

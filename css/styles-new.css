@@ -121,7 +121,7 @@ header img {
 #hello-text-wrapper {
     /* border: 2px solid black; */
     padding-top: -5rem;
-    padding-left: 10rem;
+    padding-left: 3rem;
 }
 
 #hello-section h1 {
@@ -164,10 +164,11 @@ header img {
 }
 
 #about-text-wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
     padding-top: 5rem;
+    /* border: 2px solid red; */
 }
 
 #about-img-wrapper {
@@ -180,7 +181,7 @@ header img {
 #about-section img {
     padding: 3rem;
     display: flex;
-    width: 65vh;
+    height: 50vh;
 }
 
 #about-text-wrapper h2 {
@@ -190,14 +191,13 @@ header img {
     border-bottom: 5px solid var(--accent-color);
     height: fit-content;
     width: fit-content;
-    margin-left: 10rem;
-    /* border: 2px solid yellow; */
+    /* margin-left: 10rem; */
 }
 
 #about-text-wrapper p {
     font-size: var(--p-size);
     color: var(--text-color);
-    padding-top: -10rem;
+    display: flex;
     /* border: 2px solid yellow; */
 }
 

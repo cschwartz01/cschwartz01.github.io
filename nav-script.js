@@ -3,8 +3,8 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 });
 
 // Reset menu on window resize
-window.addEventListener('resize', function() {
-    if (window.innerWidth >= 600) {
-        document.getElementById('menu').classList.remove('active');
-    }
-});
+// window.addEventListener('resize', function() {
+//     if (window.innerWidth >= 600) {
+//         document.getElementById('menu').classList.remove('active');
+//     }
+// });

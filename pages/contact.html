@@ -10,9 +10,9 @@
 
     <!-- Header -->
     <header>
-        <div id="header-img-wrapper">
-            <img src="../images/logo-no-text.png" alt="Charlie Schwartz Logo">
-        </div>
+        <a href="javascript:window.scrollTo(0,0);">
+            <img src="images/logo-no-text.png" alt="Charlie Schwartz Logo">
+        </a>
         <nav>
             <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
             <ul id="menu">
@@ -31,34 +31,26 @@
         <h2>Contact Me</h2>
      </div>
 
-        <div class="center-content">
-            <div class="row">
-                <div class="center-content">
-                    <p>(412) 310-8063 </p>
-                </div>
-                <div class="center-content">
-                    <p>schwartz01@allegheny.edu</p>
-                </div>
-                <div class="center-content">
-                    <p>linked in</p>
-                </div>
-            </div>
-            <div class="two-column">
-                <div class="center-content">
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br><br>  
-                </div>
-                <div class="center-content">
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                </div>
-            </div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-            <input type="submit" value="Submit">
+     <div class="contact-wrapper">
+        <p>My inbox is always open, you can contact me with the contact form here or with the details below:</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </div>
+    <footer>
+        <div id="footer-text-wrapper">
+            <p>© 2023 Charlie Schwartz. All rights reserved.</p> 
         </div>
+        <div id="footer-img-wrapper">
+            <img src="../images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+            <img src="../images/mail.svg" alt="Email" width="30" height="30">
+            <img src="../images/github.svg" alt="GitHub" width="30" height="30">
+        </div>
+    </footer>
 
     <script src="nav-script.js"></script>
 </body>

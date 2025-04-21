@@ -576,7 +576,9 @@ button {
     }
 
     #hello-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #hello-logo-wrapper img {
@@ -584,7 +586,9 @@ button {
     }
 
     #about-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #about-text-wrapper {
@@ -592,10 +596,25 @@ button {
     }
 
     #featured-section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        /* grid-template-columns: 1fr; */
+    }
+
+    #featured-section img {
+        width: 95%;
+        height: auto;
     }
 
     .content-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

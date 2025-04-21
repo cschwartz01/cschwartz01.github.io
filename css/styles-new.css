@@ -17,6 +17,9 @@
     --h3-size: 2rem;
     --h4-size: 1.5rem;
     --p-size: 1rem;
+
+    /* layout */
+    --header-height: 60px;
   }
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -31,7 +34,7 @@ body {
     background-color: var(--background-color);
     font-family: var(--font-family);
     width: 100%;
-    padding: 0;
+    padding-top: var(--header-height);
     margin: 0;
 }
 
@@ -66,6 +69,40 @@ header {
     /* border: 2px solid yellow; */
     width: 100%;
 }
+
+.dropbtn {
+    border: 2px solid yellow;
+    background-color: --var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--h4-size)
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 nav {
     /* border: 2px solid green; */
@@ -125,6 +162,10 @@ header img {
     align-items: center;
 }
 
+.nav:hover .menu {
+    background-color: var(--secondary-color);
+}
+
 .contact-wrapper {
     display: flex;
     justify-content: center;
@@ -182,6 +223,7 @@ footer{
 #hello-logo-wrapper img {
     /* width: 40vh; */
     height: 40vh;
+    width: fit-content;
 }
 
 #hello-text-wrapper {
@@ -226,6 +268,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 1rem;
+    width: 100;
     /* border: 2px solid yellow; */
 }
 
@@ -249,7 +292,8 @@ footer{
 #about-section img {
     padding: 3vw;
     display: flex;
-    height: 50vh;
+    height: auto;
+    width: 50vw;
 }
 
 #about-text-wrapper h2 {
@@ -482,41 +526,53 @@ button {
 @media (max-width: 600px) {
     header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         height: auto;
+        /* border: 2px solid red; */
     }
 
+    header img {
+        /* border: 2px solid yellow; */
+        height: 2.5rem;
+        width: auto;
+    }
+
+    /* Show hamburger icon */
     #menu-toggle {
-        font-size: 10em;
-        height:fit-content;
+        font-size: 2.5rem;
         background: none;
         border: none;
-        color: black;
+        color: var(--text-color);
         cursor: pointer;
-        text-align: right;
+        display: block;
+        margin: 1rem 0;
     }
 
-    /* Menu List - hidden by default */
+    /* Hide the menu initially */
     #menu {
-        list-style: none;
-        padding: 20px;
-        margin: 0;
-        display: none; 
+        display: none;
         flex-direction: column;
-        background: #749AB3;
-        position: fixed;
-        top: 10%;
-        right: 0;
-        width: 20vh;
-        font-size: 3.5vh;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 8px;
     }
 
-    /* Show menu when active */
-    #menu.active {
+    /* Reveal menu on hover over hamburger */
+    #menu-toggle:hover + #menu,
+    #menu:hover {
         display: flex;
-        align-items: center;
+    }
+
+    /* Tidy nav container */
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
     }
 
     #hello-section {
@@ -524,7 +580,7 @@ button {
     }
 
     #hello-logo-wrapper img {
-        width: 80%;
+        width: fit-content;
     }
 
     #about-section {

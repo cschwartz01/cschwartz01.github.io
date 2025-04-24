@@ -186,7 +186,30 @@ header img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem;
+}
+
+.contact-wrapper p {
+    padding-bottom: 2rem;
+}
+.contact-wrapper button {
+    background: var(--accent-color);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: var(--h4-size);
+    padding: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-wrapper a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--h4-size);
+    padding: 1rem;
+    cursor: pointer;
 }
 
 /* ---------- FOOTER ---------- */

@@ -331,7 +331,7 @@ footer{
     padding: 3vw;
     display: flex;
     height: auto;
-    width: 50vw;
+    width: 30vw;
 }
 
 #about-text-wrapper h2 {
@@ -633,6 +633,12 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    #about-section img {
+        width: 90%;
+        height: auto;
     }
 
     #about-text-wrapper {

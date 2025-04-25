@@ -110,7 +110,7 @@ header {
 
 nav {
     /* border: 2px solid green; */
-    /* position: relative; */
+    position: relative;
     display: flex;
     /* text-align: right; */
     flex-direction: row;
@@ -126,7 +126,7 @@ nav a {
 }
 
 /* trying to make color change in nav text when hover */
-.nav:hover {
+.nav:hover li {
     color: var(--tertiary-color)
 }
 
@@ -159,7 +159,7 @@ header img {
 }
 
 #menu:hover {
-    color: var(--);
+    color: var(--tertiary-color);
 }
 
 #menu a {
@@ -368,12 +368,14 @@ footer{
     top: 50%;
     right: 50%;
     transform:translate(50%, -50%);
+    cursor: pointer;
 }
 
 .overlay-text h1 {
     border-bottom: var(--accent-color);
     height: fit-content;
-    font-family: var(--font-family)
+    font-family: var(--font-family);
+    cursor: pointer;
 }
 
 .feature-page {
@@ -386,6 +388,7 @@ footer{
 #featured-section img {
     width: 450px;
     height: 450px;
+    cursor: pointer;
 }
 
 button {

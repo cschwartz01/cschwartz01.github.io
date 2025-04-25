@@ -627,6 +627,7 @@ button {
 
     #hello-logo-wrapper img {
         width: fit-content;
+        height: fit-content;
     }
 
     #about-section {

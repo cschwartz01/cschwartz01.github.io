@@ -1,0 +1,31 @@
+name: Website CI
+
+on:
+  push:
+    branches: [site-repo]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js (for linting tools)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install HTMLHint and Stylelint
+        run: |
+          npm install -g htmlhint stylelint stylelint-config-standard
+
+      - name: Validate HTML files
+        run: htmlhint "**/*.html"
+
+      - name: Validate CSS files
+        run: |
+          # Ensure Stylelint uses the configuration file
+          stylelint "**/*.css"

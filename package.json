@@ -5,8 +5,8 @@
   "main": "nav-script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:css": "stylelint 'css/**/*.css'",
-    "lint:css:fix": "stylelint 'css/**/*.css' --fix",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "lint:html": "htmlhint '**/*.html'"
   },
   "keywords": [],

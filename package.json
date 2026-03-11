@@ -1,0 +1,20 @@
+{
+  "name": "cschwartz01.github.io",
+  "version": "1.0.0",
+  "description": "`cschwartz01.github.io` and can be accessed at [https://cschwartz01.github.io](https://cschwartz01.github.io)",
+  "main": "nav-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
+    "lint:html": "htmlhint '**/*.html'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}

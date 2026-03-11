@@ -18,10 +18,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
+/* uncomment this when ready to publish */
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   /* font-family: 'Segoe UI', sans-serif; */

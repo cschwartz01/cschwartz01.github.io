@@ -19,11 +19,10 @@
 
   <nav>
     <ul>
-      <li><a href="../index"></a>Home</li>
-      <li><a href="../index.html#intro">About</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="../index.html/#featured-works">Featured Works</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -63,20 +62,26 @@ Year: 2025
 </section>
 
 <!-- Scrollable Image Gallery -->
-<section class="image-gallery">
 
-<div class="gallery-track">
+<section class="project-gallery">
+ <div class="gallery-grid">
 
-<img src="../images/naturally/a.webp" alt="Letter A" loading="lazy">
-<img src="../images/naturally/b.webp" alt="Letter B" loading="lazy">
-<img src="../images/naturally/c.webp" alt="Letter C" loading="lazy">
-<img src="../images/naturally/d.webp" alt="Letter D" loading="lazy">
-<img src="../images/naturally/e.webp" alt="Letter E" loading="lazy">
+  <img src="../images/naturally/a.webp" class="gallery-img" alt="Letter A" loading="lazy">
+  <img src="../images/naturally/b.webp" class="gallery-img" alt="Letter B" loading="lazy">
+  <img src="../images/naturally/c.webp" class="gallery-img" alt="Letter C" loading="lazy">
+  <img src="../images/naturally/d.webp" class="gallery-img" alt="Letter D" loading="lazy">
+  <img src="../images/naturally/e.webp" class="gallery-img" alt="Letter E" loading="lazy">
 
-</div>
-
+ </div>
 </section>
 
-<script src="script.js"></script>
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">&times;</button>
+  <button class="lightbox-arrow left">&#10094;</button>
+  <img class="lightbox-image" id="lightboxImage">
+  <button class="lightbox-arrow right">&#10095;</button>
+</div>
+
+<script src="../script.js"></script>
 </body>
 </html>
